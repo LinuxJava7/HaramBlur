@@ -1,91 +1,75 @@
 # HaramBlur Extension
 
-HaramBlur is a browser extension that allows you to navigate the web with respect for your Islamic values, privacy and reduce browsing distractions.
-
-HaramBlur utilizes face detection and NSFW content detection and provides controls that allow you to uphold the Islamic gaze protection principle and tailor your online experience by automatically blurring images and videos that contain unwanted or impermissible content.
-
-You can configure the type of detection you want and the amount of blur, the level of strictness, hover to unblur, choose a specific gender to blur, or turn the extension on and off via the interactive pop-up 😄
+HaramBlur is a browser extension designed to help you navigate the web with respect for your Islamic values, privacy, and reduced distractions.
 
 ![HaramBlur Demo](demos/demo1.png)
 
+## Introduction
+
+HaramBlur utilizes face detection and NSFW content detection to uphold the Islamic gaze protection principle. It allows you to tailor your online experience by automatically blurring images and videos containing unwanted or impermissible content.
+
 ## Features
 
-- Works on images and videos that contain unwanted or impermissible content
-- Works on most (if not all) websites and social media platforms
-- Configurable detection settings to tailor your browsing experience
+- Works on images and videos with unwanted content
+- Configurable detection settings for a personalized browsing experience
 - Interactive pop-up for easy on/off toggling
 - Customizable hover to unblur feature
-- Decent speed and accuracy (continously improved)
+- Works on most websites and social media platforms
 
 ## How it Works
 
-HaramBlur currently used face detection and recognition features provided by [Human library](https://github.com/vladmandic/human) to detect faces and blur them based on the user settings and preferences. It also uses NSFW detection provided by [nsfwjs](https://github.com/infinitered/nsfwjs/) to further improve the accuracy. You can configure the type of detection you want and the amount of blur, hover to unblur, or turn the extension on and off via the interactive pop-up.
+HaramBlur uses face detection and recognition features provided by [Human library](https://github.com/vladmandic/human) and NSFW detection from [nsfwjs](https://github.com/infinitered/nsfwjs/). Configure detection type, blur amount, hover to unblur, or toggle the extension via the interactive pop-up.
 
 # Installation Guide
 
-## Option 1: Using the Plugin from the extensions store
+## Option 1: Using the Plugin from the Extensions Store
 
-1. Visit the [Haramblur extension on the Chrome Web Store](https://chrome.google.com/webstore/detail/haramblur/pbcoegikffnadpahojjhgdladmmddeji) or the [Firefox Add-ons Store](https://addons.mozilla.org/addon/haramblur/).
+1. Visit the HaramBlur extension on the [Chrome Web Store](https://chrome.google.com/webstore/detail/haramblur/pbcoegikffnadpahojjhgdladmmddeji) or the [Firefox Add-ons Store](https://addons.mozilla.org/addon/haramblur/).
 2. Follow the installation instructions on the page.
 
 ## Option 2: Compiling it On Your Own
 
-If you want to compile the extension on your own, follow these steps:
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/alganzory/HaramBlur.git
+   ```
 
-### Step 1: Clone the Repository
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-Clone the HaramBlur repository to your local machine:
+3. **Code Your Magic:**
+   Make necessary modifications or enhancements to the code.
 
-```bash
-git clone https://github.com/alganzory/HaramBlur.git
-```
+4. **Build the Extension:**
+   - Run:
+     ```bash
+     npm run build
+     ```
+   - Load the extension in Chrome:
+     - Go to `chrome://extensions/`.
+     - Enable "Developer mode".
+     - Click "Load unpacked" and select the project folder.
 
-### Step 2: Install Dependencies
+5. **Generate a Release (Optional):**
+   ```bash
+   npm run release
+   ```
 
-Navigate to the project directory and install the necessary dependencies:
-
-```bash
-npm install
-```
-
-### Step 3: Code Your Magic
-
-Make the necessary modifications or enhancements to the code.
-
-### Step 4: Build the Extension
-
-- Build the extension by running:
-  ```bash
-  npm run build
-  ```
-- Load the extension in Chrome:
-  - Go to `chrome://extensions/`.
-  - Enable "Developer mode".
-  - Click "Load unpacked" and select the project folder.
-
-### Step 5: Generate a Release (Optional)
-
-Generate a release zip file to be uploaded to the browser/store:
-
-```bash
-npm run release
-```
-
-## Improvements
-
-Here are some planned improvements that could be made to HaramBlur:
+# Improvements
 
 - Support for more browsers
 - Improve the speed of detection
-- Improve the accuracy of NSFW detection to reduce false positives and negatives
-- Make the extension more Shariah-compliant by adding additional privacy controls and customization options
+- Enhance NSFW detection accuracy
+- Make the extension more Shariah-compliant with additional privacy controls
 
-## Open Source
+# Open Source
 
-HaramBlur is an open-source project and I really appreciate any contributions. Feel free to open an issue or submit a pull request if you have any suggestions or improvements you would like to see.
+HaramBlur is an open-source project, and contributions are welcome. Feel free to open an issue or submit a pull request for suggestions or improvements.
 
-## Like the project?
+# Like the project?
 
-If you like the project, please consider giving it a star ⭐️. If you wanna further support me, [buy me a coffee ☕️](https://www.buymeacoffee.com/alganzory), thank you! 😊
+If you find HaramBlur helpful, please consider giving it a star ⭐️. To support further development, [buy me a coffee ☕️](https://www.buymeacoffee.com/alganzory). Thank you! 😊
 
-Don't forget us from your Du'a! 🤲
+Don't forget us in your Du'a! 🤲
